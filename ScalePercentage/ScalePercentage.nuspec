@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>Robert Runge</authors>
+    <owners>ebita.dk - Nørgård Mikkelsen</owners>
+	<iconUrl>https://dl.dropboxusercontent.com/u/83212612/Ebita_logo_RGB.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ImageResizer plugin; scale by percentage</description>
+    <releaseNotes>Initial releaser</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>ImageResizer </tags>
+    <dependencies>
+      <dependency id="ImageResizer" version="3.4.2" />
+    </dependencies>
+  </metadata>
+</package>
