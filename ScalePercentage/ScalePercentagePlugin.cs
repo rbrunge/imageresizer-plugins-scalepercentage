@@ -18,20 +18,21 @@ namespace ImageResizer.Plugins.ScalePercentage
 
         protected override RequestedAction PostDecodeStream(ref Bitmap b, ResizeSettings settings)
         {
-            var scalePercentage = settings[PluginName];
-            if (string.IsNullOrEmpty(scalePercentage))
+            var scalePercentageQuery = settings[PluginName];
+            if (string.IsNullOrEmpty(scalePercentageQuery))
             {
                 return RequestedAction.None;
             }
 
-            int scaling = 0;
+            double scaling = 0;
             try
             {
-                scaling = 100/int.Parse(scalePercentage);
-                if (scaling >= 1)
+                int scalePercentage = int.Parse(scalePercentageQuery);
+                if (scalePercentage < 1 || scalePercentage >= 100)
                 {
                     return RequestedAction.None;
                 }
+                scaling = (double)100/scalePercentage;
             }
             catch
             {

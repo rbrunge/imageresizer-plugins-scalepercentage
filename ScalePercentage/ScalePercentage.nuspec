@@ -6,13 +6,19 @@
     <authors>Robert Runge</authors>
     <owners>ebita.dk - Nørgård Mikkelsen</owners>
 	<iconUrl>https://dl.dropboxusercontent.com/u/83212612/Ebita_logo_RGB.png</iconUrl>
+	<projectUrl>https://github.com/rbrunge/imageresizer-plugins-scalepercentage</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>ImageResizer plugin; scale by percentage</description>
     <releaseNotes>Initial releaser</releaseNotes>
     <copyright>Copyright 2014</copyright>
-    <tags>ImageResizer </tags>
+    <tags>ImageResizer plugin scale</tags>
     <dependencies>
       <dependency id="ImageResizer" version="3.4.2" />
+      <dependency id="ImageResizer.WebConfig" version="3.4.3" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="_nuget\Content\net40\web.config.install.xdt" target="content" />
+    <file src="_nuget\Content\net40\web.config.uninstall.xdt" target="content" />
+  </files>
 </package>
