@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+	<resizer>
+		<plugins>
+			<remove name="ScalePercentage" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+			<add name="ScalePercentage" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+		</plugins>
+	</resizer>
+</configuration>
